@@ -9,6 +9,7 @@ function App() {
       <h1>Ejercicios con React</h1>
       <hr />
       <SongSearch />
+      <hr />
       <CrudApi />
       <hr />
       <CrudApp />
