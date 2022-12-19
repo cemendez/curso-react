@@ -11,7 +11,7 @@ const SongForm = ({ handleSearch }) => {
   const handleChange = (e) => {
     setForm({
       ...form,
-      [e.target.name]: e.target.value.toLowerCase(),
+      [e.target.name]: e.target.value,
     });
   };
 

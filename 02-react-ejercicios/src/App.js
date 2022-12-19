@@ -1,5 +1,5 @@
 import React from "react";
-import CrudApi from "./components/CrudApi";
+// import CrudApi from "./components/CrudApi";
 import CrudApp from "./components/CrudApp";
 import SongSearch from "./components/SongSearch";
 
@@ -9,8 +9,8 @@ function App() {
       <h1>Ejercicios con React</h1>
       <hr />
       <SongSearch />
-      <hr />
-      <CrudApi />
+      {/* <hr />
+      <CrudApi /> */}
       <hr />
       <CrudApp />
     </>
