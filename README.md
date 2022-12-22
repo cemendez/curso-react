@@ -26,3 +26,9 @@ _Se debe tener instalado NodeJS_
 
 - _$_ npm install @mui/material @emotion/react @emotion/styled
 - _$_ npm install @mui/icons-material
+
+## Instalar React Router
+
+- _$_ npx create-react-app demo-app
+- _$_ cd demp-app
+- _$_ npm install react-router-dom
