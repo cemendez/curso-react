@@ -1,19 +1,17 @@
-import ConceptosBasicos from "./components/ConceptosBasicos";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Acerca from "./components/Acerca";
+import Home from "./components/Home";
+import Users from "./components/Users";
 
 function App() {
   return (
-    <div>
-      <h1>React Router</h1>
-      <a
-        href="https://reactrouter.com/en/6.6.0/start/tutorial"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Documentación
-      </a>
-      <hr />
-      <ConceptosBasicos />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/acerca" element={<Acerca />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
