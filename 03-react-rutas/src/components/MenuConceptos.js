@@ -40,6 +40,15 @@ const MenuConceptos = () => {
             Contácto
           </NavLink>
         </li>
+        <li>
+          <span>Parámetros: </span>
+          <Link to="/usuario/jonmircha">jonmircha</Link>
+          <Link to="/usuario/kenai">kEnAi</Link>
+        </li>
+        <li>
+          <span>Parámetros de consulta: </span>
+          <Link to="/productos">Productos</Link>
+        </li>
       </ol>
     </nav>
   );
