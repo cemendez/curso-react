@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import Acerca from "./pages/Acerca";
 import Contacto from "./pages/Contacto";
@@ -6,6 +6,7 @@ import Error404 from "./pages/Error404";
 import Usuario from "./pages/Usuario";
 import MenuConceptos from "./components/MenuConceptos";
 import Productos from "./pages/Productos";
+import ReactTopics from "./pages/ReactTopics";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/usuario/:username" element={<Usuario />} />
           <Route exact path="/productos" element={<Productos />} />
+          <Route exact path="/about" element={<Navigate to="/acerca" />} />
+          <Route exact path="/contact" element={<Navigate to="/contacto" />} />
+          <Route path="/react/*" element={<ReactTopics />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>

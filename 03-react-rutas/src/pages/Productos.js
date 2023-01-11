@@ -5,8 +5,8 @@ const Productos = () => {
   let query = new URLSearchParams(search);
 
   const LIMIT = 20;
-  let start = query.get("inicio");
-  let end = query.get("fin");
+  let start = parseInt(query.get("inicio")) || 1;
+  let end = parseInt(query.get("fin")) || LIMIT;
 
   let navigate = useNavigate();
 
@@ -23,8 +23,8 @@ const Productos = () => {
       <p>
         Mostrando productos del <b>{start}</b> al <b>{end}</b>
       </p>
-      <button>Atrás</button>
-      <button>Adelante</button>
+      {start > LIMIT && <button onClick={handlePrev}>Atrás</button>}
+      <button onClick={handleNext}>Adelante</button>
     </div>
   );
 };
