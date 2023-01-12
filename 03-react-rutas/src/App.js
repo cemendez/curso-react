@@ -7,6 +7,8 @@ import Usuario from "./pages/Usuario";
 import MenuConceptos from "./components/MenuConceptos";
 import Productos from "./pages/Productos";
 import ReactTopics from "./pages/ReactTopics";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -24,7 +26,10 @@ function App() {
           <Route exact path="/productos" element={<Productos />} />
           <Route exact path="/about" element={<Navigate to="/acerca" />} />
           <Route exact path="/contact" element={<Navigate to="/contacto" />} />
+          <Route exact path="/contact" element={<Navigate to="/contacto" />} />
           <Route path="/react/*" element={<ReactTopics />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
